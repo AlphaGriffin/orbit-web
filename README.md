@@ -1,14 +1,9 @@
-============================================================
 ORBIT Web - Website for Op_Return Bitcoin-Implemented Tokens
 ============================================================
 
 **A website for viewing and managing tokens on Bitcoin Cash implementing the ORBIT standard.**
 
 The official website for ORBIT is http://orbit.cash.
-
-.. contents:: Table of Contents
-.. toctree::
-   API Documentation <api/modules>
 
 *"Orbit the moon"*
 
@@ -19,8 +14,7 @@ Introduction
 ORBIT Web is open source and licensed under the MIT license. See the `LICENSE <LICENSE>`_ file for more details.
 
 
-The ORBIT Ecosystem
-~~~~~~~~~~~~~~~~~~~
+## The ORBIT Ecosystem
 
 ORBIT is a specification for simple, fungible tokens implemented by utilizing OP_RETURN for the storage of token events on the Bitcoin Cash blockchain. No changes to the Bitcoin Cash protocol or nodes are required. However, wallets may wish to incorporate this token standard in order to allow the user to easily take account of and interact with tokens that adhere to this ORBIT standard.
 
@@ -46,14 +40,12 @@ ORBIT Web
 This ORBIT website is written in HTML.
 
 
-Dependencies
-~~~~~~~~~~~~
+## Dependencies
 
 - Apache2
 
 
-Using
-~~~~~
+## Using
 
 **FIXME**
 
