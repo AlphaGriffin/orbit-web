@@ -11,7 +11,7 @@ The official website for ORBIT is http://orbit.cash.
 Introduction
 ------------
 
-ORBIT Web is open source and licensed under the MIT license. See the `LICENSE <LICENSE>`_ file for more details.
+ORBIT Web is open source and licensed under the MIT license. See the [LICENSE](LICENSE) file for more details.
 
 
 ## The ORBIT Ecosystem
