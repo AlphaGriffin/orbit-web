@@ -7,11 +7,11 @@
     @%@~LICENSE~@%@
 -->
 <head>
-    <title>Bitcoin Cash Tokens | ORBIT</title>
+    <title>Documentation | ORBIT</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    <meta name="application-name" content="ORBIT: Tokens on Bitcoin Cash"/>
-    <meta name="msapplication-tooltip" content="Op_Return Bitcoin-Implemented Tokens"/>
+    <meta name="application-name" content="ORBIT: Tokens on Bitcoin Cash (Documentation)"/>
+    <meta name="msapplication-tooltip" content="Documentation for Op_Return Bitcoin-Implemented Tokens"/>
     <meta name="viewport" content="width=device-width"/>
 
     <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="favicon/favicon.ico"/>
@@ -55,60 +55,75 @@
 
     <style type="text/css">
         html, body {
-            background: url(background.png) no-repeat fixed center;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
         }
 
         #nav {
             display: flex;
             list-style: none;
-            flex-direction: row-reverse;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            flex-wrap: wrap;
         }
 
         #nav li {
             display: block;
             list-style: none;
+            flex-grow: 1;
+            margin: .5em;
+        }
+
+        #nav li#main {
+            flex-grow: 10;
+            text-align: left;
+        }
+
+        #nav img {
+            vertical-align: middle;
+            margin-right: .2em;
+        }
+
+        h1 {
+            padding: 0;
+            margin: 0;
+            font-size: 120%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36092231-30"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36092231-29"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'UA-36092231-30');
+      gtag('config', 'UA-36092231-29');
     </script>
 </head>
 <body>
     <ul id="nav">
-        <li><a href="https://doc.orbit.cash" title="View the Documentation">Docs</a></li>
+        <li id="main"><a href="https://orbit.cash" title="Back to ORBIT Main Site"><img src="favicon/favicon-16.png"/>Home</a></li>
+        <li><h1>ORBIT Documentation</h1></li>
+        <li><a target="doc" href="orbit" title="General Documentation, Python API, and Implementation Details">Specification &amp; Main API</a></li>
+        <li><a target="doc" href="orbit-node" title="Validating Node">Node</a></li>
+        <li><a target="doc" href="orbit-cli" title="Command-Line Interface">CLI</a></li>
     </ul>
 
-    <center>
-        <h1>ORBIT: Op_Return Bitcoin-Implemented Tokens</h1>
-        <h2>Tokens on Bitcoin Cash</h2>
-
-        <img src="logo.png" style="width:250px"/>
-
-        <p><b>This website still under development.<br/>Until it's ready, discover more by visiting the projects below on GitHib.</b></p>
-
-        <p>Projects in the ORBIT ecosystem:</p>
-        <ul>
-            <li><a target="orbit" href="https://github.com/AlphaGriffin/orbit">Specification and API</a></li>
-            <li><a target="orbit-node" href="https://github.com/AlphaGriffin/orbit-node">Validating Node</a></li>
-            <li><a target="orbit-cli" href="https://github.com/AlphaGriffin/orbit-cli">Command-Line Interface</a></li>
-            <li>Qt Wallet <i>(coming soon)</i></li>
-            <li><a target="orbit-web" href="https://github.com/AlphaGriffin/orbit-web">Web Site</a> <i>(this site)</i></li>
-        </ul>
-
-        <h3>About ORBIT</h3>
-        <p>ORBIT is a specification for simple, fungible tokens implemented by utilizing OP_RETURN for the storage of token events on the Bitcoin Cash blockchain. No changes to the Bitcoin Cash protocol or nodes are required. However, wallets may wish to incorporate this token standard in order to allow the user to easily take account of and interact with tokens that adhere to this ORBIT standard.</p>
-        <p>ORBIT is open source and licensed under the MIT license. See the <a href="LICENSE">LICENSE</a> file for more details.</p>
-
-        <hr/>
-        <sup><i>"Orbit the moon"</i></sup>
-        <img src="favicon/favicon-16.png"/>
-        <sub>Copyright (C) 2018 <a href="http://alphagriffin.com">Alpha Griffin</a><sup>&trade;</sup></sub>
-    </center>
+    <iframe id="doc" name="doc">
+        <!-- // -->
+    </iframe>
 </body>
-</html>
 
